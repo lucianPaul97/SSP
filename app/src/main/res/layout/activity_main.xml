@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/Background"
+    tools:context="com.example.ssp.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:focusableInTouchMode="true">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/board_table"
+            android:padding="1dp"
+            android:background="@drawable/table_layout_border">
+        </TableLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:text="SOLVE PUZZLE"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/solve_button"
+                android:layout_weight="1"
+                android:layout_marginRight="16dp"
+                android:background="@color/Buton"
+                android:textColor="#fff"
+                android:layout_marginEnd="16dp"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="CLEAR PUZZLE"
+                android:id="@+id/clear_button"
+                android:layout_weight="1"
+                android:layout_marginLeft="16dp"
+                android:background="@color/Buton"
+                android:textColor="#fff"
+                android:layout_marginStart="16dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
